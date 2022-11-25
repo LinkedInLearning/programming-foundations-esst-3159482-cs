@@ -35,12 +35,14 @@ Um mitzurätseln und die Aufgaben selbst zu lösen, legen Sie sich einen eigenen
 ### Autor
 
 **Thomas Rose**
+
 _Web-Entwickler, Medienpädagoge_
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
 **Stefanie Lösch**
+
 _Datenanalystin, Trainerin, Dr. rer. pol._
-Sehen Sie sich andere Kurse der Autorin auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/stefanie-loesch) an.
+Sehen Sie sich andere Kurse der Autorin auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/dr-stefanie-losch) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
