@@ -1,36 +1,47 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Grundlagen der Programmierung: Basiswissen
 
-![course-name-alt-text][lil-thumbnail-url] 
+Dies ist das Repository für den **LinkedIn Learning** Kurs `Grundlagen der Programmierung: Basiswissen`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+![2508144_de_DE_TN](https://user-images.githubusercontent.com/61017085/200604206-5b73a849-abaa-478d-9134-82608537ddbe.jpg) 
+
+[[Vorab]] Wie entsteht ein Computerprogramm, was ist ein Befehl, wie funktioniert Code und welche Programmiersprache soll ich überhaupt lernen? Für alle Schüler, Studenten oder auch nur Neugierige bietet dieses Video-Training den optimalen Erstkontakt zur faszinierenden Welt der Bits und Bytes. Stefanie Lösch, eine erfahrene Data Scientistin, und der Web-Experte Thomas Rose beginnen mit der Wissensvermittlung ganz von vorne und führen Sie Schritt für Schritt zum ersten selbstgeschriebenen Programm.
+
+## Anleitung
+
+Dieser Kurs ist in GitHub Codespaces integriert, eine sofort verfügbare Cloud-Entwicklungsumgebung, die alle Funktionen Ihrer bevorzugten IDE bietet, ohne dass Sie einen lokalen Rechner einrichten müssen. Mit Codespaces können Sie von jedem Rechner aus und zu jeder Zeit praktische Übungen durchführen - und dabei ein Tool verwenden, das Ihnen häufig in der Praxis begegnen wird. 
+
+Jede Folge der Code-Challenges-Serie bietet mindestens 12 praktische Übungen in verschiedenen Schwierigkeitsgraden, so dass Sie sich selbst herausfordern und das Gelernte festigen können. Schauen Sie sich das Video " Wie verwende ich GitHub Codespaces mit diesem Kurs?" an, um zu erfahren, wie man einen Codespace einrichtet und zum Einsatz bringt.
 
 ## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+Alle Inhalte sind direkt im `main`-Branch abgelegt.
+Die Lösungen finden sich im Java package `java.com.linkedinlearning.solutions`.
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+## Installation
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+Um die Übungsdateien nutzen zu können und selbst mitzucoden, können Sie GitHub Codespaces nutzen oder das Repository klonen und alle Abhängigkeiten selbst installieren.
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+### Codespaces (empfohlen)
+Um mitzurätseln und die Aufgaben selbst zu lösen, legen Sie sich einen eigenen Codespace für den Branch main an. Dazu benötigen Sie einen github-Account.
 
+1. Klicken Sie auf den Button *Code*, dann auf *Codespaces* und schließlich auf *Create codespace on main*.
+
+### Ohne Codespaces
+1. Installieren Sie git
+2. Installieren Sie node
+3. Klonen Sie das Repository
+4. Führen Sie im Terminal ``npm install`` aus, um die nötigen Abhängigkeiten zu installieren.
+
+### Autor
+
+**Thomas Rose**
+
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
+
+**Stefanie Lösch**
+
+Sehen Sie sich andere Kurse der Autorin auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/stefanie-loesch) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-
+[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
