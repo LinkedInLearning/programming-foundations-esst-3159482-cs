@@ -37,11 +37,13 @@ Um mitzurätseln und die Aufgaben selbst zu lösen, legen Sie sich einen eigenen
 **Thomas Rose**
 
 _Web-Entwickler, Medienpädagoge_
+
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
 **Stefanie Lösch**
 
 _Datenanalystin, Trainerin, Dr. rer. pol._
+
 Sehen Sie sich andere Kurse der Autorin auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/dr-stefanie-losch) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
