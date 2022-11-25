@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Programm zum Berechnen des Alters in JavaScript -->
+<html>
+	<script>
+		// Datumsobjekt erzeugen
+		let aktuellesJahr = new Date().getFullYear();		
+		
+		// Eingabefenster erstellen
+		let geburtstagAlsString = prompt("Geben Sie bitte Ihren Geburtstag ein.");
+		
+		// Datum als Zeichenkette
+		let geburtstagAlsDatum = new Date(geburtstagAlsString);		
+		
+		// Geburtsjahr in Variable speichern
+		let geburtsjahr = geburtstagAlsDatum.getFullYear();		
+			
+		// Mögliche Falscheingaben abfangen
+		if( geburtsjahr < 1900 || geburtsjahr > aktuellesJahr || isNaN(geburtsjahr))	{
+			alert("Bitte geben Sie ein Datum im Format Jahr-Monat-Tag ein.")
+			location.reload();
+		}
+		
+		// Berechne das Alter als Differenz zwischen Aktuellem und Geburtsjahr
+		let alter = aktuellesJahr - geburtsjahr;		
+		alert("Sie sind " + alter + " Jahre jung.");		
+	</script>
+</html>
