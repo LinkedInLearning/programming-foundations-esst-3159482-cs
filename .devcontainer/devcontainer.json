@@ -1,8 +1,8 @@
 {
   "extensions": [
-    "GitHub.github-vscode-theme"
-    // Additional Extensions Here
-  ],
+	"GitHub.github-vscode-theme",
+	"ritwickdey.LiveServer"
+],
   "onCreateCommand" : "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
 }
 
