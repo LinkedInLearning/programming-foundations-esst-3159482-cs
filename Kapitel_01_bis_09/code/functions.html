@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionen</title>
+</head>
+<body>
+    Bitte öffnen Sie die "Entwicklertools" bzw. "Werkzeuge für Web-Entwickler" mit <strong>Strg + Shift + I</strong> 
+    und klicken anschließend auf <strong>Konsole</strong>.
+    <script>
+      
+        welcome( "Rose", "m" );
+        welcome( "Lösch", "w" );
+        welcome( "Gregor" );
+
+        function welcome( name, salutation = '' ) {
+            if( salutation == 'm' ) {
+                salutation = "Herr ";
+            }
+            if( salutation == 'w' ) {
+                salutation = "Frau ";
+            }
+            console.log("Willkommen, " + salutation + name );
+        }
+    </script>
+</body>
+</html>

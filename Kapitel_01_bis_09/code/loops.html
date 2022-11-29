@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schleifen</title>
+</head>
+<body>
+    Bitte öffnen Sie die "Entwicklertools" bzw. "Werkzeuge für Web-Entwickler" mit <strong>Strg + Shift + I</strong> 
+    und klicken anschließend auf <strong>Konsole</strong>.<br>
+    <br>
+    <script>
+        for ( let i = 0; i <= 10; i = i + 1 ) {
+            console.log( "i=" + i );
+        }
+
+        console.log( "-------------------" );
+
+        let a = 10;
+        let i = 0;
+        while ( a > 5 ) {
+            console.log( "a=" + a);
+            a--;
+
+            // i++;
+            // if( i > 10 ) {
+            //     break;
+            // }
+        }
+
+        let space = 4;
+        let tree = 1;
+        while ( space >= 0 ) {  
+            for ( s = 0; s < space; s++ ) {
+                document.write( '<span style="color:transparent">X</span>' );
+            }
+            for ( t = 0; t < tree; t++ ) {
+                document.write( 'X' );
+            }
+            
+            space = space - 1;
+            tree = tree + 2;
+
+            document.write( '<br>' );
+        }
+    </script>
+</body>
+</html>

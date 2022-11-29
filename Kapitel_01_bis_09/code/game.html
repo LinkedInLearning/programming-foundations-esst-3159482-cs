@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        #field {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            background: #ffffff;
+        }
+
+        #spacecraft {
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            caret-color: transparent;
+        }
+
+        .asteroid {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            caret-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="field">
+        <div id="spacecraft"></div>
+        <div id="asteroid0" class="asteroid"></div>
+        <div id="asteroid1" class="asteroid"></div>
+        <div id="asteroid2" class="asteroid"></div>
+        <div id="asteroid3" class="asteroid"></div>
+        <div id="asteroid4" class="asteroid"></div>
+    </div>
+    <script>
+        var spacecraft = document.querySelector('#spacecraft');
+        var x = 235;
+        var asteroids = new Array(
+            { x: 100, y: 0 },
+            { x: 200, y: 20 },
+            { x: 300, y: 10 },
+            { x: 500, y: 30 },
+            { x: 700, y: 40 }
+        );
+
+        var stepper = window.setInterval(moveAsteroids, 50);
+
+        spacecraft.style.left = x + 'px';
+
+        document.onkeydown = function (e) {
+            e = e || window.event;
+
+            if (e.keyCode == 39) {
+                x = x + 15;
+            }
+            if (e.keyCode == 37) {
+                x = x - 15;
+            }
+
+            spacecraft.style.left = x + 'px';
+        };
+
+        function moveAsteroids() {
+            for ( let i = 0; i < asteroids.length; i++ ) {
+                asteroids[ i ].y += ( i + 6 );
+                displayAsteroid(i);
+
+                if (asteroids[ i ].y >= 470) {
+                    detectCollision(i);
+                }
+
+                if (asteroids[ i ].y >= 480) {
+                    rebirthAsteroid( i );
+                }
+            }
+        }
+
+        function rebirthAsteroid( i ) {
+            asteroids[ i ].y = 0;
+            asteroids[ i ].x = Math.random() * 750;
+            displayAsteroid( i );
+        }
+
+        function displayAsteroid( i ) {
+            let asteroid = document.querySelector('#asteroid' + i);
+            asteroid.style.top  = asteroids[ i ].y + 'px';
+            asteroid.style.left = asteroids[ i ].x + 'px';
+        }
+
+        function detectCollision( i ) {
+            if (asteroids[ i ].x > x - 20 &&
+                asteroids[ i ].x < x + 30 ) {
+                window.clearInterval(stepper);
+                alert("Game over");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
